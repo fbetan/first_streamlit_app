@@ -42,6 +42,7 @@ except URLError as e:
 
 import snowflake.connector
 
+my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 
 streamlit.header("The fruit load list contains")
 
